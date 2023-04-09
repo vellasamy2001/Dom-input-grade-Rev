@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  
+    <script>
+       let sections=document.createElement("div");
+          document.body.appendChild(sections);
+
+       let inp1=document.createElement("input")
+         sections.appendChild(inp1);
+        
+       let inp2=document.createElement("input");
+          sections.appendChild(inp2);
+
+       let inp3=document.createElement("input");
+          sections.appendChild(inp3);
+       
+        let inp4=document.createElement("input");
+          sections.appendChild(inp4);
+        
+        let inp5=document.createElement("input");
+          sections.appendChild(inp5);
+        
+        let btn=document.createElement("button");
+         btn.innerText="submit";
+         btn.setAttribute("onclick","apple()")
+          sections.appendChild(btn);
+
+        let divs=document.createElement("div");
+          divs.setAttribute("class","sample")
+          sections.appendChild(divs)
+
+        function apple(){
+            let a=parseInt(inp1.value);
+            let b=parseInt(inp2.value);
+            let c=parseInt(inp3.value);
+            let d=parseInt(inp4.value);
+            let e=parseInt(inp5.value);
+               let grade=(divs);
+
+            let result=a+b+c+d+e;
+             let avg=result/5;
+        
+         if(avg>=95){
+            grade.innerText=(`${avg} "O grade"`);
+        }
+
+        else if((avg>=85) && (avg<95)){
+            grade.innerText=(`${avg} "A grade"`);
+        }
+
+        else if((avg>=75) && (avg<85)){
+            grade.innerText=(`${avg} "B grade"`);
+        }
+
+        else if((avg>=60) && (avg<75)){
+            grade.innerText=(`${avg} "C grade"`);
+        }
+
+        else if((avg>=40) && (avg<60)){
+            grade.innerText=(`${avg} "D grade"`);
+        }
+
+        else if(avg<40){
+            grade.innerText=(`${avg} "You are fail"`);
+        }
+
+        else{
+            grade.innerText=("enter the marks")
+        }
+ 
+        }
+
+        
+
+
+
+        // let mark1=parseInt(prompt("Enter The Mark1"));
+        // let mark2=parseInt(prompt("Enter The Mark2"));
+        // let mark3=parseInt(prompt("Enter The Mark3"));
+        // let mark4=parseInt(prompt("Enter The Mark4"));
+        // let mark5=parseInt(prompt("Enter The Mark5"));
+
+        // let result=(mark1+mark2+mark3+mark4+mark5);
+
+        // let avg=(result/5);
+
+        // if(avg>=95){
+        //     document.write("O grade");
+        // }
+
+        // else if((avg>=85) && (avg<95)){
+        //     document.write("A grade")
+        // }
+
+        // else if((avg>=75) && (avg<85)){
+        //     document.write("B grade")
+        // }
+
+        // else if((avg>=60) && (avg<75)){
+        //     document.write("C grade")
+        // }
+
+        // else if((avg>=40) && (avg<60)){
+        //     document.write("D grade")
+        // }
+
+        // else if(avg<40){
+        //     document.write("you are fail")
+        // }
+
+        // else{
+        //     document.write("enter the marks")
+        // }
+
+
+    </script>
+</body>
+</html>
